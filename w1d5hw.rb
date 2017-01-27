@@ -44,7 +44,7 @@ class Map
   end
 
   def assign(key, value)
-
+    [key, value]
   end
 
   def lookup(key, value)
