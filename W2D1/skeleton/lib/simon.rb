@@ -41,7 +41,8 @@ class Simon
   end
 
   def game_over_message
-
+    "GAME OVER"
+    @game_over = true
   end
 
   def reset_game
