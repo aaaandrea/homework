@@ -1,8 +1,20 @@
+//madLib
+//Write a function that takes three strings - a verb, an adjective,
+//and a noun - uppercases and interpolates them into the sentence
+//"We shall VERB the ADJECTIVE NOUN". Use ES6 template literals.
+
 function madLib(verb, adj, noun) {
-  return `We shall ${verb.toUpperCase()} the ${adj.toUpperCase()} ${noun.toUpperCase()}.`
+  return `We shall ${verb.toUpperCase()} the ${adj.toUpperCase()}
+                    ${noun.toUpperCase()}.`;
 }
 
+madLib('make', 'best', 'guac');
+
 // isSubstring
+//Input
+// 1) A String, called searchString.
+// 2) A String, called subString.
+// Output: A Boolean. true if the subString is a part of the searchString.
 
 function isSubstring(phrase, subphrase) {
   return phrase.includes(subphrase);
@@ -11,6 +23,11 @@ function isSubstring(phrase, subphrase) {
 // Phase II
 
 // fizzBuzz
+// 3 and 5 are magic numbers.
+//
+// Define a function fizzBuzz(array) that takes an array returns a
+// new array of every number in the array that is divisible by either
+// 3 or 5, but not both.
 
 function fizzBuzz (array) {
   const fizzBuzzArr = [];
@@ -25,6 +42,8 @@ function fizzBuzz (array) {
 }
 
 // isPrime
+// Define a function isPrime(number) that returns true if number is prime.
+// Otherwise, false. Assume number is a positive integer.
 
 function isPrime (n) {
   if (n < 2) { return false; }
@@ -39,6 +58,8 @@ function isPrime (n) {
 }
 
 // sumOfNPrimes
+// sing firstNPrimes, write a function sumOfNPrimes(n) that returns the 
+// sum of the first n prime numbers. Hint: use isPrime as a helper method.
 
 function sumOfNPrimes (n) {
   let sum = 0;
