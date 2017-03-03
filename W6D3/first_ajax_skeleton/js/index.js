@@ -16,4 +16,4 @@ $.ajax({
 
 
 // Add another console log here, outside your AJAX request
-console.log("The AJAX has been dispatched.")
+console.log("The AJAX has been dispatched.");
